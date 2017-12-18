@@ -1,0 +1,88 @@
+h1 {
+    text-align: center;
+    font-weight: bold;
+    font-size: 3em;
+  }
+  
+  .frame {
+    position: relative;
+    margin: 0 auto;
+    width: 80vw;
+    min-width: 400px;
+    max-width: 800px;
+    min-height: 260px;
+  }
+  
+  .u1, .u2, .u3, .u4 {
+    background-image: url(images/ugolok.png);
+    width: 95px;
+    height: 95px;
+    background-size: contain;
+    position: absolute;
+  }
+  
+  .u2 {
+    right: 0;
+    transform: rotate(90deg)
+  }
+  .u3 {
+    bottom: 0;
+    transform: rotate(-90deg)
+  }
+  
+  .u4 {
+    bottom: 0;
+    right: 0;
+    transform: rotate(180deg)
+  }
+  
+  .line-top, .line-bottom {
+    background-image: url(images/side.png);
+    background-size: contain;
+    position: absolute;
+    left: 95px;
+    right: 95px;
+    height: 39px;
+    
+  }
+  .line-left, .line-right {background-image: url(images/side2.png);
+    background-size: contain;
+    position: absolute;
+    top: 95px;
+    bottom: 95px;
+    width: 37px;
+  }
+  .line-bottom {
+    bottom: -3px;
+  }
+  
+  .line-right {
+    right: 0px;
+  }
+  .line-left {
+    left: -1px;
+  }
+  .content {
+    position: relative;
+    padding: 50px;
+    font-size: 2em;
+    text-align: center;
+  }
+  
+  .source{
+    font-size: 2.5em;
+    text-align: center;
+  }
+  .button {
+    
+    margin: 40px auto;
+    border: 15px double;
+    position: relative;
+    height: 40px;
+    width: 360px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.5em;
+    padding: 15px 0 0 0;
+    text-transform: uppercase;
+  }
