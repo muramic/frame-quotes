@@ -32,6 +32,8 @@ const etiketRules = [
     'И напоследок приведем слова легендарного американского актера Джека Николсона: «Я очень трепетно отношусь к правилам хорошего тона. Как передать тарелку. Не кричать из одной комнаты в другую. Не распахивать закрытую дверь без стука. Пропускать вперед даму. Цель всех этих бесчисленных простых правил — сделать жизнь лучше. Мы не можем жить в состоянии хронической войны с родителями — это глупо. Я тщательно слежу за своими манерами. Это не какая-нибудь абстракция. Это всем понятный язык взаимного уважения».',
 ];
 
+let selectedIndex = 0;
+
 const nextQuote = () => {
     selectedIndex += 1;
     changeQuote(selectedIndex);
@@ -42,7 +44,9 @@ const changeQuote = (selectedIndex) => {
     $('.content').html(etiketRules[selectedIndex])
 }
 
-$('#nextQuote').click(nextQuote);
+$(document).ready(() => {
+    $('#nextQuote').click(nextQuote);
 
-let selectedIndex = 0;
-changeQuote(selectedIndex);
+    changeQuote(selectedIndex);
+})
+
